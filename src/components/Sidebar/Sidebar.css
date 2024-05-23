@@ -1,0 +1,355 @@
+.sidebar{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background: #171717;
+    padding: 20px 20px;
+    color: #ececec;
+}
+
+.sidebar img{
+    filter: invert(1);
+}
+
+.sidebar .menu_icon{
+    margin-left: 6px;
+    width: 1.7vw;
+    display: block;
+    cursor: pointer;
+}
+
+.sidebar .new-chat{
+    margin-top: 2.5vw;
+    height: 2.5vw;
+    width: 15vw;
+    display: inline-flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 15px 10px;
+    border-radius: 50px;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.sidebar .new-chat.not_expanded{
+    width: 2.5vw;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.sidebar .new-chat:hover{
+    background: #212121;
+}
+
+.sidebar .plus_icon{
+    width: .9vw;
+    filter: brightness(2);
+}
+
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+    min-height: 65vh;
+    max-height: 65vh;
+    overflow-y: scroll;
+}
+
+.sidebar .recent::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar .recent-title{
+    display: flex;
+    align-items: center;
+    margin: 2vw 0 1vw 0;
+    color: #b4b4b4;
+    padding: 10px 30px 10px 8px;
+    gap: 10px;
+}
+
+.sidebar .recent-title img{
+    width: 1vw;
+}
+
+.sidebar .recents{
+    width: 15vw;
+    height: 2.5vw;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px 30px 15px 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1vw;
+    animation: openFade 1s;
+}
+
+.sidebar .recents p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sidebar .recent_icon{
+    width: 1.2vw;
+}
+
+.sidebar .recents:hover{
+    background: #212121;
+}
+
+.sidebar .bottom{
+    position: sticky;
+    margin-top: 5vh;
+}
+
+.sidebar .repo_link {
+    outline: none;
+    border: none;
+    color: #ececec;
+    background: #171717;
+    margin-bottom: .7vw;
+    height: 3vw;
+    width: 15vw;
+    display: inline-flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 15px 10px;
+    font-size: 1.1vw;
+    cursor: pointer;
+    transition: background 0.5s ease;
+    position: relative;
+}
+  
+.sidebar .repo_link:hover {
+    background: #212121;
+}
+  
+.sidebar .repo_link.repo_not_expanded {
+    display: none;
+}
+  
+.sidebar .repo_link.repo_expanded:before,
+.sidebar .repo_link.repo_expanded:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+  
+.sidebar .repo_link.repo_expanded:before {
+    left: 0;
+    top: 0;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    animation: border-top-right 2s forwards;
+}
+  
+.sidebar .repo_link.repo_expanded:after {
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    animation: border-bottom-left 2s forwards;
+}
+  
+@keyframes border-top-right {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    25% {
+      width: 15vw;
+      height: 0;
+      opacity: 1;
+    }
+    50% {
+      width: 15vw;
+      height: 2.9vw;
+      opacity: 1;
+    }
+    99.9% {
+      width: 15vw;
+      height: 2.9vw;
+      opacity: 1;
+    }
+    100% {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+}
+  
+@keyframes border-bottom-left {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    50% {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    50.1% {
+      opacity: 1;
+    }
+    75% {
+      width: 15vw;
+      height: 0;
+      opacity: 1;
+    }
+    99.9% {
+      width: 15vw;
+      height: 2.9vw;
+      opacity: 1;
+    }
+    100% {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+}
+  
+.sidebar .repo_link img{
+    filter: invert(1) brightness(2);
+    width: 2.5vw;
+}
+
+.sidebar hr{
+    height: 1px;
+    border: none;
+    background: #fff;
+}
+
+.sidebar .socials{
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.sidebar .socials button{
+    border: none;
+    background: #171717;
+    color: #fff;
+    font-size: 1.6vw;
+    transition: transform .5s ease;
+}
+
+.sidebar .socials button:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 491px) and (max-width: 768px) {
+    .sidebar .new-chat {
+        margin-top: 2.8vw;
+        height: 2.8vw;
+        font-size: 1.4vw;
+    }
+    .sidebar .menu_icon{
+        width: 2vw;
+    }
+    .sidebar .plus_icon{
+        width: 1.2vw;
+    }
+    .sidebar .recent-title{
+        font-size: 1.7vw;
+    }
+    .sidebar .recent-title img {
+        width: 1.5vw;
+    }
+    .sidebar .recents {
+        width: 16vw;
+        height: 2.8vw;
+        font-size: 1.5vw;
+        padding: 15px 30px 20px 8px;
+    }
+    .sidebar .recent_icon {
+        width: 1.5vw;
+    }
+    .sidebar .repo_link {
+        height: 3vw;
+        width: 17vw;
+        font-size: 1.5vw;
+    }
+    .sidebar .repo_link img {
+        width: 2.6vw;
+    }
+    .sidebar .repo_link.repo_expanded:before {
+        border: none;
+        animation: none;
+    }
+      
+    .sidebar .repo_link.repo_expanded:after {
+        border: none;
+        animation: none;
+    }
+    .sidebar .socials button {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .sidebar .new-chat {
+        margin-top: 5.8vw;
+        height: 4.8vw;
+        width: 27vw;
+        padding: 15px 10px;
+        font-size: 3vw;
+        margin-bottom: 5vw;
+        gap: 1vw;
+    }
+    .sidebar .plus_icon{
+        width: 2.5vw;
+    }
+    .sidebar .menu_icon{
+        filter: invert(1);
+        width: 4vw;
+    }
+    .sidebar .recent-title{
+        font-size: 3.4vw;
+    }
+    .sidebar .recent-title img {
+        width: 2.3vw;
+    }
+    .sidebar .recents {
+        width: 36vw;
+        height: 2.8vw;
+        font-size: 3vw;
+        padding: 15px 30px 20px 8px;
+    }
+    .sidebar .recent_icon {
+        width: 3vw;
+    }
+    .sidebar .repo_link {
+        font-size: 3vw;
+        height: 6vw;
+        width: 30vw;
+        gap: 2vw;
+    }
+    .sidebar .repo_link img {
+        width: 3vw;
+    }
+    .sidebar .repo_link.repo_expanded:before {
+        border: none;
+        animation: none;
+    }
+      
+    .sidebar .repo_link.repo_expanded:after {
+        border: none;
+        animation: none;
+    }
+    .sidebar .socials button {
+        font-size: 4.5vw;
+        margin: 1vw 2vw;
+    }
+}    
