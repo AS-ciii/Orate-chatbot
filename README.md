@@ -4,7 +4,7 @@ This repository contains the source files of Orate, a user-friendly chatbot whic
 # Orate Synopsis
 Orate is a chatbot that uses the Gemini API to find and give answers quickly. It's designed to help users get accurate information fast, making it great for customer support, research, or any questions you have. Orate is easy to use and reliable, making it a helpful tool for getting the information you need.
 
-Snapshots:
+**Snapshots**:
 
 ![Orate ss](https://github.com/AS-ciii/Orate-chatbot/blob/main/src/assets/Orate-ss-1.jpeg)
 
