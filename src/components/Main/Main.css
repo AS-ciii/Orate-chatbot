@@ -1,0 +1,542 @@
+.container{
+    flex: 1;
+    display: inline-block;
+    position: relative;
+    background: #212121;
+}
+
+.container .navigation{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: normal;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2vw;
+    color: #b4b4b4;
+    padding: 10px 20px;
+    animation: openFade 1s;
+}
+
+.container .navigation img{
+    filter: invert(1);
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    margin-bottom: .1vw;
+}
+
+.container .popup-content{
+    height: auto;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-family: "Outfit", sans-serif !important;
+    color: #fff;
+    background: #2f2f2f;
+    padding: 25px 10px 15px 10px;
+    right: .5vw;
+    top: 5.5vh;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container .popup-content .img2{
+    height: 3vw;
+    width: 3vw;
+    margin-bottom: .2vw;
+}
+
+.container .popup-content  p{
+    font-size: 1.1vw;
+} 
+
+.container .popup-content hr{
+    margin: 10px 0;
+    border: none;
+    border-top: .5px solid #b4b4b4; 
+    height: .5px;
+    width: 80%;
+}
+
+.container .popup-content .p2{
+    margin-top: .5vw;
+    margin-bottom: .7vw;
+    font-size: 1.1vw;
+}
+
+.container .popup-content input{
+    width: 85%;
+    height: 2vw;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1vw;
+    outline: none;
+    text-align: center;
+}
+
+.container .popup-content input::placeholder{
+   text-align: center;
+   font-family: "Outfit", sans-serif;
+   font-size: 1vw;
+}
+
+.container .popup-content button{
+    height: 1.8vw;
+    width: 5vw;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    background: transparent;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    transition: background .5s ease;
+    font-size: 1vw;
+}
+
+.container .popup-content button:hover{
+    background: #3f3a40;
+}
+
+.container .main-container{
+    max-width: 75vw;
+    min-height: 60vh;
+    margin: auto;
+    margin-top: 5vw;
+    margin-bottom: 2.5vw;
+}
+
+.container .message-container{
+    margin: 3vw 0;
+    padding: 20px;
+    color: #c4c7c5;
+    font-size: 2.2vw;
+    font-weight: 500;
+    animation: openFade 1s;
+}
+
+.container .message-container span{
+    font-size: 4.5vw;
+    background: linear-gradient(to left, #67b26f, #4ca2cd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container .message-container p{
+    line-height: 3.5vw;
+    font-size: 2.7vw;
+}
+
+.container .examples{
+    display: flex;
+    flex-direction: column;
+    max-width: 75vw;
+    margin: auto;
+    padding: 25px;
+    gap: 1.4vw;
+    animation: openFade 1.5s;
+}
+
+.container .examples img{
+    width: 1.3vw;
+    filter: invert(1);
+    margin-left: auto;
+    margin-top: auto;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    padding: 1px 1px;
+}
+
+.container .examples p{
+    font-size: 1.7vw;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #c4c7c5;
+}
+
+.container .box-container{
+    display: flex;
+    gap: 1vw;
+}
+
+.container .boxes{
+    background: #171717;
+    border: none;
+    border-radius: 15px;
+    height: 7.5vw;
+    width: 16vw;
+    padding: 10px 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+} 
+
+.container .boxes p{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.container .boxes:hover{
+    background: #111;
+}
+
+.container .main-foot{
+    position: sticky;
+    max-width: 75vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px 20px 20px;
+    margin-bottom: 3vw;
+    animation: openFade 2s;
+}
+
+.container .search-field{
+    width: 69vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    position: relative;
+}
+
+.container .search-field input{
+    height: 4vw;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    padding: 30px;
+    background: #2f2f2f;
+    outline: none;
+    color: #c4c7c5;
+    font-size: 1.2vw;
+}
+
+.container .search-field img{
+    position: absolute;
+    left: 94.5%;
+    filter: invert(.5);
+    width: 2.4vw;
+    right: auto;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    padding: 4px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.container .main-foot p{
+    padding: 0 20px;
+    position: absolute;
+    color: #fff;
+    font-size: 1vw;
+    margin-top: 1vw;
+    text-align: center;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container .main-foot a{
+    text-decoration: none;
+    color: #add8e6;
+    cursor: pointer;
+}
+
+.container .res{
+    padding: 0 5%;
+    max-width: 70vw;
+    max-height: 60vh;
+    overflow-y: scroll;
+    
+}
+
+.res::-webkit-scrollbar{
+    display: none;
+}
+
+.container .res-title{
+    margin: 5vw 0;
+    display: flex;
+    align-items: center;
+    gap: 1.8vw;
+}
+
+.container .res-title img{
+    filter: brightness(2);
+    width: 2.2vw;
+}
+
+.container .res-title p{
+    font-size: 1.2vw;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    padding: 10px 15px;
+    background: #171717;
+    border-radius: 25px;
+}
+
+.container .res-data{
+    margin: 5vw 0;
+    display: flex;
+    gap: 1.8vw;
+}
+
+.container .res-data img{
+    object-fit: contain;
+    max-width: 2.5vw;
+    max-height: 1.9vw;
+    filter: invert(1) brightness(.4);
+}
+
+.container .load ul{
+    display: flex;
+}
+
+.container .load li{
+    list-style: none;
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #b4b4b4;
+    animation: jump 1.4s linear infinite;
+}
+
+@keyframes jump {
+    0%{
+        transform: translateY(0);
+    }
+    60%{
+        transform: translateY(0);
+    }
+    80%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.container .load li:nth-child(1){
+    animation-delay: 0;
+}
+.container .load li:nth-child(2){
+    animation-delay: -1.2s;
+}
+.container .load li:nth-child(3){
+    animation-delay: -1s;
+}
+.container .load li:nth-child(4){
+    animation-delay: -.8s;
+}
+.container .load li:nth-child(5){
+    animation-delay: -.6s;
+}
+
+.container .res-data p{
+    font-size: 1.3vw;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 490px){
+    .container .navigation{
+        font-size: 5.5vw;
+    }
+    .container .navigation img{
+        width: 5vw;
+        height: 5vw;
+    }
+    .container .navigation .popup-content{
+        width: 35vw;
+    }
+    .container .popup-content .img2 {
+        height: 6vw;
+        width: 6vw;
+        margin-bottom: .7vw;
+    }
+    .container .popup-content p {
+        font-size: 3vw;
+    }
+    .container .popup-content .p2 {
+        margin-bottom: 2vw;
+        font-size: 3vw;
+    }
+    .container .popup-content input {
+        font-size: 2.2vw;
+        height: 4.5vw;
+        margin-bottom: 4vw;
+    }
+    .container .popup-content input::placeholder {
+        font-size: 2.2vw;
+    }
+    .container .popup-content button {
+        height: 3vw;
+        width: 6.5vw;
+        font-size: 2.6vw;
+    }
+    .container .message-container {
+        margin: 7vw 0;
+    }
+    .container .message-container span{
+        font-size: 9vw;       
+    }  
+    .container .message-container .p1{
+        margin-bottom: 2.5vw;
+    }  
+    .container .message-container p{
+        font-size: 4vw;
+        line-height: 3vw;
+    }
+    .container .examples{
+        margin-top: 5vw;
+    }
+    .container .examples p{
+        font-size: 4vw;
+    }
+    .container .boxes{
+        height: 28vw;
+        width: 17vw;
+        border-radius: 7px;
+        padding: 7px 8px;
+    } 
+    .container .boxes p{
+        font-size: 2.5vw;
+    }
+    .container .boxes img{
+        width: 3vw;
+    }   
+    .container .main-container{
+        min-height: 70vh;
+    }
+    .container .search-field {
+        width: 68vw;
+    }
+    .container .search-field input {
+        font-size: 3vw;
+        padding: 22px;
+    }    
+    .container .search-field img {
+        left: 87%;
+        width: 6vw;
+    } 
+    .container .main-foot p{
+        font-size: 2vw;
+    }   
+    .container .res-title img {
+        width: 5.5vw;
+    }
+    .container .res-title p {
+        font-size: 3vw;
+    }
+    .container .res-data img {
+        object-fit: contain;
+        max-width: 6vw;
+        max-height: 5vw;
+    }
+    .container .res-data p {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 491px) and (max-width: 768px) {
+    .container .navigation{
+        font-size: 3vw;
+    }
+    .container .navigation img{
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .container .navigation .popup-content{
+        width: 20vw;
+    }
+    .container .popup-content .img2 {
+        height: 3.5vw;
+        width: 3.5vw;
+        margin-bottom: .2vw;
+    }
+    .container .popup-content p {
+        font-size: 1.5vw;
+    }
+    .container .popup-content .p2 {
+        margin-bottom: 1.2vw;
+        font-size: 1.6vw;
+    }
+    .container .popup-content input {
+        height: 2.5vw;
+        font-size: 1.2vw;
+    }
+    .container .popup-content button {
+        height: 2vw;
+        width: 5.5vw;
+        font-size: 1.4vw;
+    }
+    .container .message-container {
+        margin: 5vw 0;
+    }
+    .container .message-container span{
+        font-size: 6vw;
+    }    
+    .container .message-container p{
+        font-size: 2.8vw;
+    }
+    .container .examples p{
+        font-size: 2vw;
+    }
+    .container .boxes{
+        height: 14vw;
+        width: 17vw;
+    } 
+    .container .boxes p{
+        font-size: 1.7vw;
+    }   
+    .container .main-container{
+        min-height: 70vh;
+    }
+    .container .search-field {
+        width: 71vw;
+    }
+    .container .search-field input {
+        height: 3vw;
+        font-size: 1.5vw;
+        padding: 20px;
+    }    
+    .container .search-field img {
+        left: 93%;
+        width: 3vw;
+    }    
+    .container .main-foot p{
+        font-size: 1.5vw;
+    }
+    .container .res-title img {
+        width: 3vw;
+    }
+    .container .res-title p {
+        font-size: 1.6vw;
+    }
+    .container .res-data img {
+        object-fit: contain;
+        max-width: 4vw;
+        max-height: 2.5vw;
+    }
+    .container .res-data p {
+        font-size: 1.6vw;
+    }
+} 
