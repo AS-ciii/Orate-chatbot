@@ -1,4 +1,4 @@
-# Welcome to Orate!
+# Welcome to Orate! Your AI Chatbot!
 This repository contains the source files of Orate, a user-friendly chatbot which fetches and delivers data using Google Gemini API.
 
 # Orate Synopsis
