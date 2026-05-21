@@ -1,7 +1,7 @@
 # Welcome to Orate! Your AI Chatbot!
 This repository contains the source files of Orate, a user-friendly chatbot which fetches and delivers data using Google Gemini API.
 
-# Orate Synopsis
+# Synopsis
 Orate is a chatbot that uses the Gemini API to find and give answers quickly. It's designed to help users get accurate information fast, making it great for customer support, research, or any questions you have. Orate is easy to use and reliable, making it a helpful tool for getting the information you need.
 
 **Snapshots**:
